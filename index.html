@@ -37,6 +37,14 @@
             margin-top: 0;
             color: #555;
         }
+        .protocol-card h4 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #666;
+            font-size: 16px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
         .schema-link {
             display: inline-block;
             background: #007bff;
@@ -78,10 +86,26 @@
             <div class="protocol-card">
                 <h3>PACT Methodology</h3>
                 <p>Partnership for Carbon Transparency schemas for carbon footprint data exchange.</p>
+                
+                <h4>Core Extensions</h4>
                 <div>
                     <a href="schemas/PACT_methodology/DataModelExtension/product-carbon-footprint-extension.json" class="schema-link">PCF Extension</a>
+                    <a href="schemas/PACT_methodology/DataModelExtension/data-model-extension.json" class="schema-link">Data Model Extension</a>
                 </div>
-                <p><a href="examples/PACT_methodology/">View Examples</a></p>
+                
+                <h4>Specialized Extensions</h4>
+                <div>
+                    <a href="schemas/PACT_methodology/DataModelExtension/activityName/schema.json" class="schema-link">Activity Name</a>
+                    <a href="schemas/PACT_methodology/DataModelExtension/database/schema.json" class="schema-link">Database</a>
+                    <a href="schemas/PACT_methodology/DataModelExtension/dataResponsibility/schema.json" class="schema-link">Data Responsibility</a>
+                    <a href="schemas/PACT_methodology/DataModelExtension/economic/schema.json" class="schema-link">Economic</a>
+                    <a href="schemas/PACT_methodology/DataModelExtension/emissionsGHGBreakdown/schema.json" class="schema-link">GHG Breakdown</a>
+                    <a href="schemas/PACT_methodology/DataModelExtension/emissionsScopeBreakdown/schema.json" class="schema-link">Scope Breakdown</a>
+                    <a href="schemas/PACT_methodology/DataModelExtension/impactMethods/schema.json" class="schema-link">Impact Methods</a>
+                    <a href="schemas/PACT_methodology/DataModelExtension/uncertaintyAssessment/schema.json" class="schema-link">Uncertainty Assessment</a>
+                </div>
+                
+                <p><a href="examples/PACT_methodology/">View Examples</a> | <a href="schemas/PACT_methodology/">Browse All Schemas</a></p>
             </div>
             
             <!-- Add more protocol cards as you expand -->
@@ -93,7 +117,7 @@
         <h3>Using Schemas in APIs</h3>
         <div class="code-block">
 {
-  "data": { /* your data */ },
+  "data": { /* your PCF data */ },
   "$schema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/product-carbon-footprint-extension.json"
 }
         </div>
@@ -101,10 +125,12 @@
         <h3>Validation Example</h3>
         <div class="code-block">
 const Ajv = require('ajv');
-const schema = await fetch('https://your-domain.com/schemas/PACT_methodology/DataModelExtension/product-carbon-footprint-extension.json');
+const schemaUrl = 'https://your-domain.com/schemas/PACT_methodology/DataModelExtension/activityName/schema.json';
+const schema = await fetch(schemaUrl);
 const ajv = new Ajv();
 const validate = ajv.compile(await schema.json());
 const valid = validate(yourData);
+if (!valid) console.log(validate.errors);
         </div>
     </section>
 
