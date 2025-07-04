@@ -1,0 +1,10 @@
+{
+  "specVersion": "3.0.0",
+  "dataSchema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/dataResponsibility/schema.json",
+  "data": {
+    "dataGeneratorName": "Research Team",
+    "dataGeneratorEmail": "research@greentech.org",
+    "dataReviewerName": "Dr. Maria Santos",
+    "dataReviewerEmail": "m.santos@certification.org"
+  }
+}

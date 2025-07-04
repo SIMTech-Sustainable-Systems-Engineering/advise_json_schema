@@ -1,0 +1,7 @@
+{
+  "specVersion": "3.0.0",
+  "dataSchema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/impactMethods/schema.json",
+  "data": {
+    "impactMethods": "Impact assessment following ISO 14040/14044 principles using ReCiPe 2016 v1.1 methodology. Climate change assessment based on IPCC AR6 GWP100 characterization factors. Inventory modeling aligned with ILCD Handbook recommendations."
+  }
+}

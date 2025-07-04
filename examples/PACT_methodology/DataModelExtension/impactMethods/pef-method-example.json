@@ -1,0 +1,7 @@
+{
+  "specVersion": "3.0.0",
+  "dataSchema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/impactMethods/schema.json",
+  "data": {
+    "impactMethods": "Environmental Footprint 3.0 method following EU Product Environmental Footprint (PEF) guidelines"
+  }
+}

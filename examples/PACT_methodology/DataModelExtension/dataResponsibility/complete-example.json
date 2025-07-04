@@ -1,0 +1,12 @@
+{
+  "specVersion": "3.0.0",
+  "dataSchema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/dataResponsibility/schema.json",
+  "data": {
+    "dataGeneratorName": "Dr. Sarah Johnson",
+    "dataGeneratorEmail": "s.johnson@sustainablecorp.com",
+    "dataEntryName": "Michael Chen",
+    "dataEntryEmail": "m.chen@sustainablecorp.com",
+    "dataReviewerName": "Prof. Elena Rodriguez",
+    "dataReviewerEmail": "e.rodriguez@university.edu"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "specVersion": "3.0.0",
+  "dataSchema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/impactMethods/schema.json",
+  "data": {
+    "impactMethods": "TRACI 2.1 (Tool for the Reduction and Assessment of Chemical Impacts) methodology developed by US EPA for North American conditions"
+  }
+}

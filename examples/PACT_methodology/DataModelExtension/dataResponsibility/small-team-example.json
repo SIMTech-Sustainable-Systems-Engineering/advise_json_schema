@@ -1,0 +1,10 @@
+{
+  "specVersion": "3.0.0",
+  "dataSchema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/dataResponsibility/schema.json",
+  "data": {
+    "dataGeneratorName": "Emma Davis",
+    "dataEntryName": "Emma Davis",
+    "dataReviewerName": "Tom Wilson",
+    "dataReviewerEmail": "t.wilson@smallbusiness.com"
+  }
+}
