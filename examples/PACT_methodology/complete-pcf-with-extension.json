@@ -1,0 +1,85 @@
+{
+  "data": {
+    "id": "91715e5e-fd0b-4d1c-8fab-76290c46e6ed",
+    "specVersion": "3.0.0",
+    "created": "2024-07-04T09:32:20Z",
+    "status": "Active",
+    "validityPeriodStart": "2024-07-04T09:32:20Z",
+    "validityPeriodEnd": "2025-12-31T00:00:00Z",
+    "companyName": "Example Manufacturing Corp",
+    "companyIds": [
+      "urn:uuid:69585GB6-56T9-6958-E526-6FDGZJHU1326",
+      "urn:epc:id:sgln:562958.00000.4"
+    ],
+    "productDescription": "High-efficiency electric motor, 5kW industrial grade",
+    "productIds": ["urn:gtin:5695872369587"],
+    "productClassifications": ["urn:pact:productclassification:un-cpc:4511"],
+    "productNameCompany": "EcoMotor Pro 5000",
+    "comment": "Primary data collected from tier-1 suppliers for 85% of emissions",
+    "pcf": {
+      "declaredUnitOfMeasurement": "piece",
+      "declaredUnitAmount": "1",
+      "productMassPerDeclaredUnit": "15.5",
+      "pcfExcludingBiogenicUptake": "125.8",
+      "pcfIncludingBiogenicUptake": "125.8",
+      "fossilGhgEmissions": "120.3",
+      "fossilCarbonContent": "2.1",
+      "biogenicCarbonContent": "0.0",
+      "landManagementBiogenicCO2Emissions": "0.0",
+      "landManagementBiogenicCO2Removals": "0.0",
+      "biogenicCO2Withdrawal": "0.0",
+      "aircraftGhgEmissions": "5.5",
+      "ipccCharacterizationFactors": ["AR6"],
+      "crossSectoralStandards": [
+        "GHGP-Product",
+        "ISO14067"
+      ],
+      "productOrSectorSpecificRules": [
+        {
+          "operator": "Other",
+          "ruleNames": [
+            "Electrical Equipment Carbon Footprint Guidelines v3.2"
+          ],
+          "otherOperatorName": "IEA"
+        }
+      ],
+      "biogenicAccountingMethodology": "GHPG",
+      "boundaryProcessesDescription": "Cradle-to-gate including: 1) Raw material extraction and processing (steel, copper, aluminum, rare earth elements), 2) Component manufacturing (windings, housing, bearings), 3) Assembly and testing, 4) Packaging. Excludes use phase and end-of-life.",
+      "referencePeriodStart": "2024-01-01T00:00:00Z",
+      "referencePeriodEnd": "2024-12-31T23:59:59Z",
+      "geographyRegionOrSubregion": "Western Europe",
+      "secondaryEmissionFactorSources": [
+        {
+          "name": "Ecoinvent",
+          "version": "3.9"
+        },
+        {
+          "name": "IEA Emission Factors",
+          "version": "2024"
+        }
+      ],
+      "exemptedEmissionsPercent": "2.1",
+      "exemptedEmissionsDescription": "Minor packaging materials and office overhead emissions",
+      "allocationRulesDescription": "Mass allocation for multi-product processes, economic allocation for co-products with significant value difference",
+      "primaryDataShare": "67.8",
+      "dqi": {
+        "technologicalDQR": "1.4",
+        "temporalDQR": "1.8",
+        "geographicalDQR": "1.6"
+      },
+      "verification": {
+        "providerName": "GreenCert International"
+      }
+    },
+    "extensions": [
+      {
+        "specVersion": "3.0.0",
+        "dataSchema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/primary-data-share/schema.json",
+        "data": {
+          "primaryDataShareScope2": 92.5,
+          "primaryDataShareScope3": 58.3
+        }
+      }
+    ]
+  }
+}

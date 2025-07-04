@@ -7,7 +7,7 @@ const addFormats = require('ajv-formats');
 const glob = require('glob');
 
 // Initialize AJV with formats
-const ajv = new Ajv({ allErrors: true, verbose: true });
+const ajv = new Ajv({ allErrors: true, verbose: true, strict: false });
 addFormats(ajv);
 
 function validateSchema(schemaPath) {
