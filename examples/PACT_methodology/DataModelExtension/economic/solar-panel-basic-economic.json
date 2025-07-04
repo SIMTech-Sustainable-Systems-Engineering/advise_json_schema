@@ -1,0 +1,54 @@
+{
+  "specVersion": "3.0.0",
+  "id": "550e8400-e29b-41d4-a716-446655440010",
+  "companyName": "GreenTech Manufacturing Ltd",
+  "companyIds": ["LEI:ABC123DEF456GHI789"],
+  "productDescription": "Solar panel module for residential applications",
+  "productIds": ["EAN:1234567890123"],
+  "productCategoryCpc": "47190",
+  "productNameCompany": "SolarMax Residential 300W",
+  "comment": "PCF with basic economic data for solar panel manufacturing",
+  "pcf": {
+    "declaredUnit": "piece",
+    "unitaryProductAmount": "1",
+    "fossilGhgEmissions": "850.5",
+    "fossilCarbonContent": "12.3",
+    "biogenicCarbonContent": "0.0",
+    "dLucGhgEmissions": "0.0",
+    "landManagementGhgEmissions": "0.0",
+    "otherBiogenicGhgEmissions": "0.0",
+    "iLucGhgEmissions": "0.0",
+    "biogenicCarbonWithdrawal": "0.0",
+    "aircraftGhgEmissions": "0.0",
+    "characterizationFactors": "AR6",
+    "crossSectoralStandardsUsed": ["ISO 14067:2018"],
+    "boundaryProcessesDescription": "Cradle-to-gate including silicon purification, cell manufacturing, and module assembly",
+    "referencePeriodStart": "2023-01-01T00:00:00Z",
+    "referencePeriodEnd": "2023-12-31T23:59:59Z",
+    "geographyCountrySubdivision": "DE-BY",
+    "geographyCountry": "DE",
+    "geographyRegionOrSubregion": "Europe",
+    "exemptedEmissionsPercent": "1.2",
+    "exemptedEmissionsDescription": "Minor packaging and transport materials below threshold",
+    "packagingEmissionsIncluded": true,
+    "packagingGhgEmissions": "15.2"
+  },
+  "extensions": {
+    "economic": {
+      "baseYear": "2023",
+      "currency": "EUR",
+      "CAPEX": {
+        "lifespan": "25.0",
+        "initialCAPEX": "2500000.00"
+      },
+      "OPEX": {
+        "fixed": "400000.00",
+        "variable": "12.50"
+      },
+      "productPricing": {
+        "unitSellingPrice": "185.00",
+        "priceBasis": "Ex-Works (EXW)"
+      }
+    }
+  }
+}

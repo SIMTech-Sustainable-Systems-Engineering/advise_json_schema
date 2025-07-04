@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/data-model-extension.json",
   "title": "PACT Data Model Extension",
   "description": "Schema for PACT Data Model Extensions as defined in the PACT specification v3.0.0",

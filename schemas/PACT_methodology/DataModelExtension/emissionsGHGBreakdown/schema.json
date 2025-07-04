@@ -1,0 +1,45 @@
+{
+  "$id": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/emissionsGHGBreakdown/schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PACT Emissions GHG Breakdown Extension Schema",
+  "description": "A Pathfinder Data Model Extension to provide detailed breakdown of greenhouse gas emissions by specific gas types.",
+  "type": "object",
+  "properties": {
+    "CO2": {
+      "type": "string",
+      "pattern": "^[+]?\\d+(\\.\\d+)?$",
+      "description": "Carbon dioxide emissions (CO2) as a positive or zero decimal value"
+    },
+    "CH4": {
+      "type": "string",
+      "pattern": "^[+]?\\d+(\\.\\d+)?$",
+      "description": "Methane emissions (CH4) as a positive or zero decimal value"
+    },
+    "N2O": {
+      "type": "string",
+      "pattern": "^[+]?\\d+(\\.\\d+)?$",
+      "description": "Nitrous oxide emissions (N2O) as a positive or zero decimal value"
+    },
+    "HFC": {
+      "type": "string",
+      "pattern": "^[+]?\\d+(\\.\\d+)?$",
+      "description": "Hydrofluorocarbon emissions (HFC) as a positive or zero decimal value"
+    },
+    "PFC": {
+      "type": "string",
+      "pattern": "^[+]?\\d+(\\.\\d+)?$",
+      "description": "Perfluorocarbon emissions (PFC) as a positive or zero decimal value"
+    },
+    "SF6": {
+      "type": "string",
+      "pattern": "^[+]?\\d+(\\.\\d+)?$",
+      "description": "Sulfur hexafluoride emissions (SF6) as a positive or zero decimal value"
+    },
+    "NF3": {
+      "type": "string",
+      "pattern": "^[+]?\\d+(\\.\\d+)?$",
+      "description": "Nitrogen trifluoride emissions (NF3) as a positive or zero decimal value"
+    }
+  },
+  "additionalProperties": false
+}

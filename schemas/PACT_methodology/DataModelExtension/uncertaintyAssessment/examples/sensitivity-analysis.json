@@ -1,0 +1,3 @@
+{
+  "description": "Sensitivity analysis performed on key parameters: 10% variation in electricity consumption (+/-8% impact on total emissions), 20% variation in transportation distance (+/-12% impact), 15% variation in material inputs (+/-6% impact). Most sensitive parameter: electricity consumption."
+}

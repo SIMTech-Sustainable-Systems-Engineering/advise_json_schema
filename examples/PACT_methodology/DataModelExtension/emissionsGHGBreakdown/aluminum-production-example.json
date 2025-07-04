@@ -1,0 +1,13 @@
+{
+  "specVersion": "3.0.0",
+  "dataSchema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/emissionsGHGBreakdown/schema.json",
+  "data": {
+    "CO2": "2150.0",
+    "CH4": "8.5",
+    "N2O": "2.1",
+    "HFC": "0",
+    "PFC": "25.3",
+    "SF6": "0.2",
+    "NF3": "0"
+  }
+}

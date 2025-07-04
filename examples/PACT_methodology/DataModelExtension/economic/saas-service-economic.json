@@ -1,0 +1,55 @@
+{
+  "specVersion": "3.0.0",
+  "id": "550e8400-e29b-41d4-a716-446655440012",
+  "companyName": "CloudGreen Technologies",
+  "companyIds": ["LEI:DEF456GHI789JKL012"],
+  "productDescription": "Cloud-based carbon accounting software service",
+  "productIds": ["SKU:CG-CARBON-SAAS-001"],
+  "productCategoryCpc": "84900",
+  "productNameCompany": "CarbonTracker Pro",
+  "comment": "Service-based PCF with subscription economic model",
+  "pcf": {
+    "declaredUnit": "user-month",
+    "unitaryProductAmount": "1",
+    "fossilGhgEmissions": "1.25",
+    "fossilCarbonContent": "0.08",
+    "biogenicCarbonContent": "0.0",
+    "dLucGhgEmissions": "0.0",
+    "landManagementGhgEmissions": "0.0",
+    "otherBiogenicGhgEmissions": "0.0",
+    "iLucGhgEmissions": "0.0",
+    "biogenicCarbonWithdrawal": "0.0",
+    "aircraftGhgEmissions": "0.0",
+    "characterizationFactors": "AR6",
+    "crossSectoralStandardsUsed": ["ISO 14067:2018"],
+    "boundaryProcessesDescription": "Cloud infrastructure, data centers, software development, and customer support",
+    "referencePeriodStart": "2023-01-01T00:00:00Z",
+    "referencePeriodEnd": "2023-12-31T23:59:59Z",
+    "geographyCountrySubdivision": "US-CA",
+    "geographyCountry": "US",
+    "geographyRegionOrSubregion": "Americas",
+    "exemptedEmissionsPercent": "5.0",
+    "exemptedEmissionsDescription": "Office operations and employee commuting below materiality threshold",
+    "packagingEmissionsIncluded": false
+  },
+  "extensions": {
+    "economic": {
+      "baseYear": "2023",
+      "currency": "USD",
+      "additionalEconomicInformation": "SaaS economic model with recurring revenue and scalable infrastructure costs",
+      "OPEX": {
+        "fixed": "250000.00",
+        "variable": "2.50",
+        "description": "Fixed costs include core infrastructure and development team. Variable costs per user for additional compute and storage"
+      },
+      "productPricing": {
+        "unitSellingPrice": "29.99",
+        "priceBasis": "Domestic Delivery",
+        "priceValidityPeriod": "Monthly subscription with annual commitment options",
+        "volumeDiscounts": true,
+        "volumeDiscountsStructure": "Enterprise pricing starts at 100 users with 15% discount, custom pricing for 1000+ users",
+        "description": "Monthly SaaS subscription with tiered pricing for different organization sizes"
+      }
+    }
+  }
+}

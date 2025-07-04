@@ -1,6 +1,6 @@
 {
   "$id": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/database/schema.json",
-  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "PACT Database Extension Schema",
   "description": "A Pathfinder Data Model Extension to identify the database version that the datapoint is stored in.",
   "type": "object",

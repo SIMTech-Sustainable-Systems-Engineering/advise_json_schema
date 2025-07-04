@@ -1,0 +1,10 @@
+{
+  "specVersion": "3.0.0",
+  "dataSchema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/emissionsScopeBreakdown/schema.json",
+  "data": {
+    "description": "Manufacturing facility with significant direct emissions from production processes",
+    "Scope1": "3250.7",
+    "Scope2": "450.3",
+    "Scope3": "1850.5"
+  }
+}
