@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/product-carbon-footprint-extension.json",
+  "title": "PACT Product Carbon Footprint Extension",
+  "description": "Extension schema for PACT Product Carbon Footprint data with additional industry-specific properties",
+  "type": "object",
+  "properties": {
+    "extendedProperties": {
+      "type": "object",
+      "properties": {
+        "industrySpecific": {
+          "type": "object",
+          "properties": {
+            "materialComposition": {
+              "type": "object",
+              "description": "Detailed material composition breakdown",
+              "properties": {
+                "primaryMaterial": {
+                  "type": "string",
+                  "description": "Primary material type"
+                },
+                "recycledContent": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 100,
+                  "description": "Percentage of recycled content"
+                },
+                "materialOrigin": {
+                  "type": "string",
+                  "description": "Geographic origin of primary materials"
+                }
+              },
+              "required": ["primaryMaterial"]
+            },
+            "manufacturingDetails": {
+              "type": "object",
+              "description": "Additional manufacturing process information",
+              "properties": {
+                "energySource": {
+                  "type": "string",
+                  "enum": ["renewable", "grid", "mixed"],
+                  "description": "Primary energy source for manufacturing"
+                },
+                "productionLocation": {
+                  "type": "string",
+                  "description": "ISO 3166-1 alpha-2 country code"
+                },
+                "certifications": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "List of relevant certifications"
+                }
+              }
+            }
+          }
+        },
+        "dataQuality": {
+          "type": "object",
+          "description": "Extended data quality indicators",
+          "properties": {
+            "dataCollectionMethod": {
+              "type": "string",
+              "enum": ["primary", "secondary", "mixed"],
+              "description": "Method used for data collection"
+            },
+            "uncertaintyRange": {
+              "type": "object",
+              "properties": {
+                "lower": {
+                  "type": "number",
+                  "description": "Lower bound of uncertainty range"
+                },
+                "upper": {
+                  "type": "number",
+                  "description": "Upper bound of uncertainty range"
+                }
+              },
+              "required": ["lower", "upper"]
+            },
+            "verificationStatus": {
+              "type": "string",
+              "enum": ["verified", "self-declared", "third-party"],
+              "description": "Verification status of the data"
+            }
+          }
+        }
+      }
+    },
+    "customFields": {
+      "type": "object",
+      "description": "Organization-specific custom fields",
+      "additionalProperties": true
+    }
+  },
+  "examples": [
+    {
+      "extendedProperties": {
+        "industrySpecific": {
+          "materialComposition": {
+            "primaryMaterial": "Steel",
+            "recycledContent": 25,
+            "materialOrigin": "EU"
+          },
+          "manufacturingDetails": {
+            "energySource": "renewable",
+            "productionLocation": "DE",
+            "certifications": ["ISO 14001", "EMAS"]
+          }
+        },
+        "dataQuality": {
+          "dataCollectionMethod": "primary",
+          "uncertaintyRange": {
+            "lower": -15,
+            "upper": 20
+          },
+          "verificationStatus": "third-party"
+        }
+      },
+      "customFields": {
+        "internalProductCode": "SKU-12345",
+        "supplierTier": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/product-carbon-footprint-extension.json",
+  "extendedProperties": {
+    "industrySpecific": {
+      "materialComposition": {
+        "primaryMaterial": "Aluminum",
+        "recycledContent": 40,
+        "materialOrigin": "US"
+      },
+      "manufacturingDetails": {
+        "energySource": "mixed",
+        "productionLocation": "US",
+        "certifications": ["ISO 14001", "Energy Star"]
+      }
+    },
+    "dataQuality": {
+      "dataCollectionMethod": "primary",
+      "uncertaintyRange": {
+        "lower": -10,
+        "upper": 15
+      },
+      "verificationStatus": "third-party"
+    }
+  },
+  "customFields": {
+    "internalProductCode": "ALU-WIDGET-001",
+    "supplierTier": 1,
+    "lastUpdated": "2025-07-04T10:00:00Z",
+    "responsibleTeam": "Sustainability"
+  }
+}
