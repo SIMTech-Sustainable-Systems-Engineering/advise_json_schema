@@ -1,0 +1,34 @@
+{
+  "$id": "https://extensions.advise.technology/schemas/0.1.0/dataResponsibility/schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PACT Data Responsibility Extension Schema",
+  "description": "A Pathfinder Data Model Extension to track the people responsible for data generation, entry, and review in the Product Carbon Footprint calculation.",
+  "type": "object",
+  "properties": {
+    "dataGeneratorName": {
+      "type": "string",
+      "description": "Name of the person responsible for generating the PCF data"
+    },
+    "dataGeneratorEmail": {
+      "type": "string",
+      "description": "Email address of the person responsible for generating the PCF data"
+    },
+    "dataEntryName": {
+      "type": "string",
+      "description": "Name of the person responsible for entering the PCF data into the system"
+    },
+    "dataEntryEmail": {
+      "type": "string",
+      "description": "Email address of the person responsible for entering the PCF data into the system"
+    },
+    "dataReviewerName": {
+      "type": "string",
+      "description": "Name of the person responsible for reviewing the PCF data"
+    },
+    "dataReviewerEmail": {
+      "type": "string",
+      "description": "Email address of the person responsible for reviewing the PCF data"
+    }
+  },
+  "additionalProperties": false
+}

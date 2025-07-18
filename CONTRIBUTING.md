@@ -38,7 +38,7 @@ Thank you for contributing to our JSON Schema repository! This guide will help y
 ### Schema Structure
 ```json
 {
-  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://your-domain.com/schemas/{protocol}/{schema-name}.json",
   "title": "Clear, descriptive title",
   "description": "Comprehensive description of purpose and usage",

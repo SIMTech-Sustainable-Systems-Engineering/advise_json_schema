@@ -1,7 +1,0 @@
-{
-  "specVersion": "3.0.0",
-  "dataSchema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/impactMethods/schema.json",
-  "data": {
-    "impactMethods": "ReCiPe 2016 v1.1 Midpoint (H) methodology for impact assessment"
-  }
-}

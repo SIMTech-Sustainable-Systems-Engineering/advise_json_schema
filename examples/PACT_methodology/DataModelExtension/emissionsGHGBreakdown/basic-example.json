@@ -1,9 +1,0 @@
-{
-  "specVersion": "3.0.0",
-  "dataSchema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/emissionsGHGBreakdown/schema.json",
-  "data": {
-    "CO2": "1250.5",
-    "CH4": "12.4",
-    "N2O": "5.2"
-  }
-}

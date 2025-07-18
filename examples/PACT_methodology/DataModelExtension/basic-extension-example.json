@@ -1,8 +1,0 @@
-{
-  "specVersion": "3.0.0",
-  "dataSchema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/primary-data-share/schema.json",
-  "data": {
-    "primaryDataShareScope2": 85.5,
-    "primaryDataShareScope3": 42.3
-  }
-}

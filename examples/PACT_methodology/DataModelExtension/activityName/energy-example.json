@@ -1,7 +1,0 @@
-{
-  "specVersion": "3.0.0",
-  "dataSchema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/activityName/schema.json",
-  "data": {
-    "activityName": "Electricity Generation - Solar PV, Multi-Si, 3kWp slanted-roof installation"
-  }
-}

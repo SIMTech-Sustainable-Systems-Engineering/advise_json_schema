@@ -1,7 +1,0 @@
-{
-  "specVersion": "3.0.0",
-  "dataSchema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/impactMethods/schema.json",
-  "data": {
-    "impactMethods": "CML-IA baseline V3.05 method for environmental impact assessment with focus on European conditions"
-  }
-}

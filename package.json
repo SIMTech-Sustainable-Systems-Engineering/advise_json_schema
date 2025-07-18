@@ -4,12 +4,7 @@
   "description": "Centralized JSON schema repository for data exchange protocols",
   "main": "index.js",
   "scripts": {
-    "test": "node tools/test-all.js",
-    "validate": "node tools/validate-schema.js",
-    "validate:examples": "node tools/validate-examples.js",
-    "lint": "eslint tools/**/*.js",
-    "docs:generate": "node tools/generate-docs.js",
-    "prepare": "node tools/pre-commit-hook.js"
+    "validate": "node tools/validate-schema.js ./schemas"
   },
   "keywords": [
     "json-schema",

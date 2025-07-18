@@ -1,9 +1,0 @@
-{
-  "specVersion": "3.0.0",
-  "dataSchema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/emissionsScopeBreakdown/schema.json",
-  "data": {
-    "Scope1": "1250.5",
-    "Scope2": "850.2",
-    "Scope3": "2150.8"
-  }
-}

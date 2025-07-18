@@ -1,0 +1,29 @@
+{
+  "$id": "https://extensions.advise.technology/schemas/0.1.0/emissionsScopeBreakdown/schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PACT Emissions Scope Breakdown Extension Schema",
+  "description": "A Pathfinder Data Model Extension to provide detailed breakdown of greenhouse gas emissions by GHG Protocol scopes (Scope 1, 2, and 3).",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string",
+      "description": "Description of the scope breakdown methodology or context"
+    },
+    "Scope1": {
+      "type": "string",
+      "pattern": "^[+]?\\d+(\\.\\d+)?$",
+      "description": "Direct GHG emissions from sources owned or controlled by the organization"
+    },
+    "Scope2": {
+      "type": "string",
+      "pattern": "^[+]?\\d+(\\.\\d+)?$",
+      "description": "Indirect GHG emissions from the generation of purchased electricity, steam, heating, and cooling"
+    },
+    "Scope3": {
+      "type": "string",
+      "pattern": "^[+]?\\d+(\\.\\d+)?$",
+      "description": "All other indirect GHG emissions that occur in the value chain of the organization"
+    }
+  },
+  "additionalProperties": false
+}

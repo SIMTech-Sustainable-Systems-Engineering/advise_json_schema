@@ -1,7 +1,0 @@
-{
-  "specVersion": "3.0.0",
-  "dataSchema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/activityName/schema.json",
-  "data": {
-    "activityName": "Transportation - Road Freight, 40t truck, Euro 6"
-  }
-}

@@ -1,25 +1,29 @@
-# JSON Schema Repository
+# AdViSE JSON Schema
 
-This repository serves as a centralized location for hosting JSON schemas used across multiple data exchange protocols. The schemas are organized by protocol and can be served via GitHub Pages or AWS hosting.
+This repository serves as a centralized location for hosting JSON schemas used for PACT Data Model Extensions.
 
 ## Repository Structure
 
 ```
-├── docs/                   # Documentation and GitHub Pages content
-├── schemas/               # JSON schema files organized by protocol
-│   └── PACT_methodology/  # PACT (Partnership for Carbon Transparency) schemas
-│       └── DataModelExtension/
-├── examples/              # Example JSON files demonstrating schema usage
-│   └── PACT_methodology/
+├── _extensions/           # Extension schema files and documentation
+├── _versions/             # Version documentation
+├── _layouts/              # Jekyll layout templates
+├── schemas/               # Generated schema files (Jekyll output)
 ├── tools/                 # Validation scripts and utilities
-├── tests/                 # Schema validation tests
+├── _config.yml           # Jekyll configuration
 └── README.md             # This file
 ```
 
-## Supported Protocols
+## Supported Extensions
 
-- **PACT (Partnership for Carbon Transparency)**: Carbon footprint data exchange schemas
-- _Additional protocols will be added as needed_
+- **Activity Name**: Standardized activity naming for LCA processes
+- **Database**: Database source and version information
+- **Data Responsibility**: Data generator, entry, and reviewer information
+- **Economic**: Economic data including CAPEX, OPEX, and product pricing
+- **Emissions GHG Breakdown**: Detailed greenhouse gas composition
+- **Emissions Scope Breakdown**: Scope 1, 2, and 3 emissions breakdown
+- **Impact Methods**: Life cycle impact assessment methodology documentation
+- **Uncertainty Assessment**: Uncertainty analysis and confidence intervals
 
 ## Usage
 
@@ -27,48 +31,26 @@ This repository serves as a centralized location for hosting JSON schemas used a
 
 Schemas can be accessed directly via their URL path:
 ```
-https://your-domain.com/schemas/{protocol}/{schema-file}.json
+https://simtech-sustainable-systems-engineering.github.io/advise_json_schema/schemas/{version}/{extension}/schema.json
 ```
 
-### API Integration
-
-Include schema URLs in your API responses to enable validation:
-```json
-{
-  "data": { ... },
-  "$schema": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/schema.json"
-}
-```
 
 ## Contributing
 
-1. Follow the folder structure convention: `schemas/{protocol}/{subcategory}/`
-2. Include comprehensive documentation in each protocol folder
-3. Provide example files in the `examples/` directory
+1. Follow the folder structure convention: `_extensions/{version}/{extension-name}/`
+2. Include comprehensive documentation in each extension's `documentation.md` file
+3. Provide example files in the extension's `examples/` directory when applicable
 4. Ensure all schemas are valid JSON Schema Draft 7 or later
-5. Update relevant README files when adding new schemas
+5. Update relevant documentation when adding new extensions
+6. Follow the Jekyll site structure for proper deployment
 
 ## Validation
 
 Use the tools in the `tools/` directory to validate schemas before committing:
 ```bash
 # Validate schema syntax
-node tools/validate-schema.js schemas/PACT_methodology/schema.json
-
-# Test against examples
-node tools/test-examples.js PACT_methodology
+node tools/validate-schema.js _extensions/0.1.0/economic/schema.json
 ```
-
-## Hosting
-
-This repository is designed to work with:
-- **GitHub Pages**: Automatic deployment from main branch
-- **AWS S3 + CloudFront**: For enterprise hosting requirements
-- **Custom hosting**: Standard web server with CORS headers
-
-## License
-
-[Specify your license here]
 
 ## Contact
 

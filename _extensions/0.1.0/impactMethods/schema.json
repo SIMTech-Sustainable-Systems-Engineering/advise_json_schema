@@ -1,0 +1,14 @@
+{
+  "$id": "https://extensions.advise.technology/schemas/0.1.0/impactMethods/schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PACT Impact Methods Extension Schema",
+  "description": "A Pathfinder Data Model Extension to specify the impact assessment methods used in the Product Carbon Footprint calculation.",
+  "type": "object",
+  "properties": {
+    "impactMethods": {
+      "type": "string",
+      "description": "Text description of the impact assessment methods, methodologies, or frameworks used for the PCF calculation"
+    }
+  },
+  "additionalProperties": false
+}
