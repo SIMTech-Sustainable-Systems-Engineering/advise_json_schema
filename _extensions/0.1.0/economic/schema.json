@@ -1,5 +1,5 @@
 {
-  "$id": "https://your-domain.com/schemas/PACT_methodology/DataModelExtension/economic/schema.json",
+  "$id": "https://extensions.advise.technology/schemas/0.1.0/emissionsGHGBreakdown/schema.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "PACT Economic Extension Schema",
   "description": "A Pathfinder Data Model Extension to provide comprehensive economic data including CAPEX, OPEX, end-of-life costs, residual values, and product pricing information.",
