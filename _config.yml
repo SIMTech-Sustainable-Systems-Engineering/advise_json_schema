@@ -38,12 +38,9 @@ header_pages:
 
 # Collections
 collections:
-  versions:
-    output: true
-    permalink: /schemas/:path/
   extensions:
     output: true
-    permalink: /schemas/:path/
+    permalink: /extensions/:path/
 
 # Defaults
 defaults:

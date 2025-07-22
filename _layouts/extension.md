@@ -1,12 +1,9 @@
 ---
 layout: page
 ---
-{% comment %}
-    Layout for extension page, include js that changes the domain to the current domain
-{% endcomment %}
 
+<a href="{{page.url}}schema.json"><h3>Schema file</h3></a>
 
-{{ content }}
-
+{{content}}
 
 <script src="{{ site.baseurl }}{% link assets/js/change-domain.js %}"></script>

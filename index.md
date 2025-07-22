@@ -10,7 +10,13 @@ description: Centralized schemas for AdViSE APIs
     <p>Centralized <a href="https://wbcsd.github.io/tr/data-model-extensions-guidance/">Data model extension</a> schemas for <a href="https://www.carbon-transparency.org/pact-methodology">PACT</a></p>
 </div>
 
-## [Click Here for latest schema](/schemas/latest)
+## Extensions
+
+{% assign extensions = site.extensions | map: "extension_name" | uniq %}
+{% for extension in extensions %}
+  - **[{{extension}}](/extensions/{{extension}}/index)**
+{% endfor %}
+
 ## Quick Start
 
 ### Using Schemas in APIs
@@ -18,7 +24,7 @@ description: Centralized schemas for AdViSE APIs
 ```json
 {
   "data": { /* your PCF data */ },
-  "$schema": "https://your-domain.com/schemas/{version}/{extension}/schema.json"
+  "$schema": "https://your-domain.com/extensions/{extension}/{version}/schema.json"
 }
 ```
 
@@ -27,7 +33,7 @@ description: Centralized schemas for AdViSE APIs
 ```javascript
 const Ajv = require('ajv');
 const version = '0.1.0'
-const schemaUrl = 'https://your-domain.com/schemas/{version}/activityName/schema.json';
+const schemaUrl = 'https://your-domain.com/extensions/{extension}/{version}/schema.json';
 const schema = await fetch(schemaUrl);
 const ajv = new Ajv();
 const validate = ajv.compile(await schema.json());

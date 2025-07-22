@@ -31,7 +31,7 @@ This repository serves as a centralized location for hosting JSON schemas used f
 
 Schemas can be accessed directly via their URL path:
 ```
-https://simtech-sustainable-systems-engineering.github.io/advise_json_schema/schemas/{version}/{extension}/schema.json
+https://simtech-sustainable-systems-engineering.github.io/advise_json_schema/extensions/{extension}/{version}/schema.json
 ```
 
 

@@ -1,0 +1,15 @@
+{
+  "$id": "https://extensions.advise.technology/extensions/uncertaintyAssessment/2025-07.01/schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PACT Uncertainty Assessment Extension Schema",
+  "description": "A Pathfinder Data Model Extension to provide uncertainty assessment descriptions for greenhouse gas emissions data.",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string",
+      "description": "Description of the uncertainty assessment methodology, approach, or findings"
+    }
+  },
+  "required": ["description"],
+  "additionalProperties": false
+}
