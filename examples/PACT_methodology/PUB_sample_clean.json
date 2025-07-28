@@ -1,0 +1,113 @@
+{
+    "data": [
+        {
+            "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+            "specVersion": "3.0.1",
+            "created": "2025-03-31T23:59:59+08:00",
+            "status": "Active",
+            "validityPeriodStart": "2023-04-01T00:00:00+08:00",
+            "validityPeriodEnd": "2024-03-31T23:59:59+08:00",
+            "companyName": "Public Utilities Board",
+            "companyIds": ["urn:advise:leaf:database:id:a1b2c3d4-e5f6-7890-abcd-ef1234567890"],
+            "productDescription": "",
+            "productIds": ["urn:advise:leaf:database:id:8f9e2a5b-4c7d-6e8f-9a0b-1c2d3e4f5a6b"],
+            "productClassifications": [
+                "urn:pact:productclassification:un-cpc:69210",
+                "urn:pact:productclassification:sefrCategory:water",
+                "urn:pact:productclassification:sefrSubCategory:potableWater"
+            ],
+            "productNameCompany": "Water",
+            "comment": "Singapore Water Emission Intensity is based on the Scope 1 and 2 emissions of Singapore’s Water Sector. This includes Scope 1 and 2 emissions from PUB facilities, aligned to PUB’s GreenGov.SG reporting submissions. It also includes Scope 1 and 2 emissions from NEWater and Desalination Design, Build, Own and Operate (DBOO) facilities, and Scope 1 emissions from sludge incineration and discharge of treated used water effluent to sea. These emissions are then divided by total Singapore water demand to give Singapore's Water Emissions Intensity.\nIt is difficult to separate out the Potable water and NEWater emission intensity to two separate emission intensities as PUB operates in a closed-loop water system where the same drop of water will be recycled and used for both potable water and NEWater. Please refer to PUB's website to learn more about PUB’s closed water loop.",
+            "pcf": {
+                "declaredUnitOfMeasurement": "m3",
+                "declaredUnitAmount": "1.0",
+                "productMassPerDeclaredUnit": "1000.0",
+                "referencePeriodStart": "2023-04-01T00:00:00+08:00",
+                "referencePeriodEnd": "2024-03-31T23:59:59+08:00",
+                "geographyCountry": "SG",
+                "boundaryProcessesDescription": "Water abstraction, treatment, conveyance, water reclamation and sludge disposal in Singapore.",
+                "pcfExcludingBiogenicUptake": "0.5662",
+                "pcfIncludingBiogenicUptake": "0.5662",
+                "fossilCarbonContent": "",
+                "fossilGhgEmissions": "0.0015973423497473",
+                "ipccCharacterizationFactors": ["AR5"],
+                "crossSectoralStandards": ["GHGP-Product"],
+                "exemptedEmissionsPercent": "",
+                "exemptedEmissionsDescription": "Biogenic CO2 emissions were not computed in this emission factor based on scope 1 & 2 GHG inventory Guidance.",
+                "allocationRulesDescription": null,
+                "secondaryEmissionFactorSources": [
+                    {
+                        "name": "IPCC",
+                        "version": "IPCC 2006 Volume 2, Chapter 2, Table 2.3"
+                    },
+                    {
+                        "name": "IPCC",
+                        "version": "IPCC 2014 Fifth Assessment Report"
+                    },
+                    {
+                        "name": "Singapore Department of Statistics",
+                        "version": "Singapore Department of Statistics, Population Trends 2023"
+                    },
+                    {
+                        "name": "Energy Market Authority",
+                        "version": "Singapore Grid Emission Factor (2022) - 0.417kgCO2/kWh"
+                    }
+                ],
+                "primaryDataShare": "3.5"
+            },
+            "extensions": [
+                {
+                    "specVersion": "2025-07.01",
+                    "dataSchema": "https://extensions.advise.technology/extensions/activityName/2025-07.01/schema.json",
+                    "documentation": "https://extensions.advise.technology/extensions/activityName/2025-07.01",
+                    "data": {
+                        "activityName": "Potable Water and NEWater"
+                    }
+                },
+                {
+                    "specVersion": "2025-07.01",
+                    "dataSchema": "https://extensions.advise.technology/extensions/database/2025-07.01/schema.json",
+                    "documentation": "https://extensions.advise.technology/extensions/database/2025-07.01",
+                    "data": {
+                        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+                        "name": "Singapore Water Emissions Intensity FY2023",
+                        "active": true,
+                        "description": "",
+                        "start_date": "2023-04-01",
+                        "end_date": "2024-03-31",
+                        "type": "Public",
+                        "access": "View Only",
+                        "trust": "Government Sources"
+                    }
+                },
+                {
+                    "specVersion": "2025-07.01",
+                    "dataSchema": "https://extensions.advise.technology/extensions/dataResponsiblity/2025-07.01/schema.json",
+                    "documentation": "https://extensions.advise.technology/extensions/dataResponsiblity/2025-07.01",
+                    "data": {
+                        "dataGeneratorName": "someone",
+                        "dataGeneratorEmail": "someone@pub.gov.sg",
+                        "dataEntryName": "someone",
+                        "dataEntryEmail": "someone@pub.gov.sg",
+                        "dataReviewerName": "someone else",
+                        "dataReviewerEmail": "someone_else@simtech.a-star.edu.sg"
+                    }
+                },
+                {
+                    "specVersion": "2025-07.01",
+                    "dataSchema": "https://extensions.advise.technology/extensions/emissionsGHGBreakdown/2025-07.01/schema.json",
+                    "documentation": "https://extensions.advise.technology/extensions/emissionsGHGBreakdown/2025-07.01",
+                    "data": {
+                        "CO2": "0.438950289892356",
+                        "CH4": "0.00000414213667871869",
+                        "N2O": "0.000479911097494915",
+                        "HFC": "0.0",
+                        "PFC": "0.0",
+                        "SF6": "0.0",
+                        "NF3": "0.0"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,155 @@
+{
+    "data": [
+        {
+            "id": "",
+            "specVersion": "3.0.1",
+            "precedingPfIds": [],
+            "created": "",
+            "status": "",
+            "validityPeriodStart": "",
+            "validityPeriodEnd": "",
+            "companyName": "",
+            "companyIds": [],
+            "productDescription": "",
+            "productIds": [],
+            "productClassifications": [],
+            "productNameCompany": "",
+            "comment": "",
+            "pcf": {
+                "declaredUnitOfMeasurement": "",
+                "declaredUnitAmount": "",
+                "productMassPerDeclaredUnit": "",
+                "referencePeriodStart": "",
+                "referencePeriodEnd": "",
+                "geographyCountry": "",
+                "boundaryProcessesDescription": "",
+                "pcfExcludingBiogenicUptake": "",
+                "pcfIncludingBiogenicUptake": "",
+                "fossilCarbonContent": "",
+                "biogenicCarbonContent": "",
+                "recycledCarbonContent": "",
+                "fossilGhgEmissions": "",
+                "landUseChangeGhgEmissions": "",
+                "landCarbonLeakage": "",
+                "landManagementFossilGhgEmissions": "",
+                "landManagementBiogenicCO2Emissions": "",
+                "landManagementBiogenicCO2Removals": "",
+                "biogenicCO2Uptake": "",
+                "biogenicNonCO2Emissions": "",
+                "landAreaOccupation": "",
+                "aircraftGhgEmissions": "",
+                "packagingEmissionsIncluded": null,
+                "packagingGhgEmissions": "",
+                "packagingBiogenicCarbonContent": "",
+                "outboundLogisticsGhgEmissions": "",
+                "ccsTechnologicalCO2CaptureIncluded": null,
+                "ccsTechnologicalCO2Capture": "",
+                "technologicalCO2CaptureOrigin": null,
+                "technologicalCO2Removals": "",
+                "ccuCarbonContent": "",
+                "ccuCalculationApproach": null,
+                "ccuCreditCertification": null,
+                "ipccCharacterizationFactors": [],
+                "crossSectoralStandards": [],
+                "productOrSectorSpecificRules": [],
+                "exemptedEmissionsPercent": "",
+                "exemptedEmissionsDescription": "",
+                "allocationRulesDescription": "",
+                "secondaryEmissionFactorSources": [],
+                "primaryDataShare": "",
+                "dqi": {
+                    "technologicalDQR": "",
+                    "geographicalDQR": "",
+                    "temporalDQR": ""
+                },
+                "verification": {
+                    "coverage": "",
+                    "providerName": "",
+                    "completedAt": "",
+                    "standardName": "",
+                    "comments": ""
+                }
+            },
+            "extensions": [
+                {
+                    "specVersion": "2025-07.01",
+                    "dataSchema": "https://extensions.advise.technology/extensions/activityName/2025-07.01/schema.json",
+                    "documentation": "https://extensions.advise.technology/extensions/activityName/2025-07.01",
+                    "data": {
+                        "activityName": ""
+                    }
+                },
+                {
+                    "specVersion": "2025-07.01",
+                    "dataSchema": "https://extensions.advise.technology/extensions/database/2025-07.01/schema.json",
+                    "documentation": "https://extensions.advise.technology/extensions/database/2025-07.01",
+                    "data": {
+                        "id": "",
+                        "name": "",
+                        "active": null,
+                        "description": "",
+                        "start_date": "",
+                        "end_date": "",
+                        "type": "",
+                        "access": "",
+                        "trust": ""
+                    }
+                },
+                {
+                    "specVersion": "2025-07.01",
+                    "dataSchema": "https://extensions.advise.technology/extensions/dataResponsiblity/2025-07.01/schema.json",
+                    "documentation": "https://extensions.advise.technology/extensions/dataResponsiblity/2025-07.01",
+                    "data": {
+                        "dataGeneratorName": "",
+                        "dataGeneratorEmail": "",
+                        "dataEntryName": "",
+                        "dataEntryEmail": "",
+                        "dataReviewerName": "",
+                        "dataReviewerEmail": ""
+                    }
+                },
+                {
+                    "specVersion": "2025-07.01",
+                    "dataSchema": "https://extensions.advise.technology/extensions/emissionsGHGBreakdown/2025-07.01/schema.json",
+                    "documentation": "https://extensions.advise.technology/extensions/emissionsGHGBreakdown/2025-07.01",
+                    "data": {
+                        "CO2": "",
+                        "CH4": "",
+                        "N2O": "",
+                        "HFC": "",
+                        "PFC": "",
+                        "SF6": "",
+                        "NF3": ""
+                    }
+                },
+                {
+                    "specVersion": "2025-07.01",
+                    "dataSchema": "https://extensions.advise.technology/extensions/emissionsScopeBreakdown/2025-07.01/schema.json",
+                    "documentation": "https://extensions.advise.technology/extensions/emissionsScopeBreakdown/2025-07.01",
+                    "data": {
+                        "description": "",
+                        "Scope1": "",
+                        "Scope2": "",
+                        "Scope3": ""
+                    }
+                },
+                {
+                    "specVersion": "2025-07.01",
+                    "dataSchema": "https://extensions.advise.technology/extensions/impactMethods/2025-07.01/schema.json",
+                    "documentation": "https://extensions.advise.technology/extensions/impactMethods/2025-07.01",
+                    "data": {
+                        "impactMethods": ""
+                    }
+                },
+                {
+                    "specVersion": "2025-07.01",
+                    "dataSchema": "https://extensions.advise.technology/extensions/uncertaintyAssessment/2025-07.01/schema.json",
+                    "documentation": "https://extensions.advise.technology/extensions/uncertaintyAssessment/2025-07.01",
+                    "data": {
+                        "description": ""
+                    }
+                }
+            ]
+        }
+    ]
+}
